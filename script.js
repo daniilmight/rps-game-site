@@ -1,4 +1,5 @@
 const output = document.getElementById('output');
+
 function resetComputerChoice() {
     const computerButtons = document.querySelectorAll('.disabled-button');
     computerButtons.forEach(button => {

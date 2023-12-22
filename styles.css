@@ -6,12 +6,12 @@ body, html {
     background: 
     linear-gradient(to bottom, #78c57b, #4ec07b, #20a58d, #007d8d),
     linear-gradient(to top, #c84c5d, #e44d26, #f16522, #fc9026);
-  background-size: 200% 100%;
-  background-repeat: no-repeat;
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
 
-  -webkit-animation: gradientBG 16s ease infinite;
-  -moz-animation: gradientBG 16s ease infinite;
-  animation: gradientBG 16s ease infinite;
+    -webkit-animation: gradientBG 16s ease infinite;
+    -moz-animation: gradientBG 16s ease infinite;
+    animation: gradientBG 16s ease infinite;
 }
 
 @-webkit-keyframes gradientBG {
@@ -47,10 +47,15 @@ body, html {
     width: 30%;
     border: 10px solid #0f4b19;
     border-radius: 50px;
+    background-color: #92aaaa;
 }
 
 .middle-section {
     flex: 1;
+    border-top: 10px solid #0f4b19;
+    border-bottom: 10px solid #0f4b19;
+    background-color: #92aaaa;
+    height: 100px;
 }
 
 ul {
@@ -59,9 +64,9 @@ ul {
 }
 
 .button, .disabled-button {
-    margin: 20px 35%; /* Увеличиваем расстояние между кнопками */
+    margin: auto;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     display: block; /* Делаем кнопки блочными элементами */
     width: 150px; /* Устанавливаем ширину изображений */
     height: 150px; /* Устанавливаем высоту изображений */
@@ -85,10 +90,13 @@ ul {
 }
 
 .button:hover {
-    transform: scale(1.5) rotate(360deg);
-}
+    transform: translateX(50px) scale(1.5);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); /* Применяем эффект свечения при наведении */
+  }
 .enlarge {
-    transform: scale(1.5) rotate(360deg);
+    transform: translateX(-50px) scale(1.5);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9));
+    
   }
   /* Стилизация для тега <p> */
 #output {

@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Split Website</title>
+    <title>RPS</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="left-side">
             <h2>Игрок</h2>
             <ul>
-                <li class="button" id="rock" onclick="handleButtonClick('rock')">Камень</li>
-                <li class="button" id="scissors" onclick="handleButtonClick('scissors')">Ножницы</li>
-                <li class="button" id="paper" onclick="handleButtonClick('paper')">Бумага</li>
+                <li class="button" id="rock" onclick="handleButtonClick('rock')"></li>
+                <li class="button" id="scissors" onclick="handleButtonClick('scissors')"></li>
+                <li class="button" id="paper" onclick="handleButtonClick('paper')"></li>
             </ul>
         </div>
         <div class="middle-section">
@@ -22,12 +23,11 @@
         <div class="right-side">
             <h2>Компьютер</h2>
             <ul>
-                <li class="disabled-button" id="computer-rock">Камень</li>
-                <li class="disabled-button" id="computer-scissors">Ножницы</li>
-                <li class="disabled-button" id="computer-paper">Бумага</li>
+                <li class="disabled-button" id="computer-rock"></li>
+                <li class="disabled-button" id="computer-scissors"></li>
+                <li class="disabled-button" id="computer-paper"></li>
             </ul>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
